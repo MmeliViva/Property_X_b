@@ -146,7 +146,7 @@ const bookingConfirmationModalHTML = `
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form id="bookingForm" action="https://formsubmit.co/bibbys.gh@gmail.com" method="POST">
+          <form id="bookingForm" action="https://formsubmit.co/info@propertyx.co.za" method="POST">
             <input type="hidden" id="confirmRoomType" name="roomType">
             <input type="hidden" id="confirmRoomPrice" name="roomPrice">
             <input type="hidden" id="confirmCheckin" name="checkin">
@@ -159,7 +159,7 @@ const bookingConfirmationModalHTML = `
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_subject" value="Bibby's BnB: Reservation Confirmation!">
             <!-- Add auto-response for the client -->
-            <input type="hidden" name="_autoresponse" value="Thank you for booking with PropertyX! Your reservation has been received. To complete your reservation, please make payment within 24 hours to:\n Nedbank\nAccount Number: 1263112900\n. Please use your booking ID as the payment reference and send your proof of payment to bibbys.gh@gmail.com. Alternatively, call us at 047 491 0299 to arrange payment on arrival.\n\nPlease see your booking details below.">
+            <input type="hidden" name="_autoresponse" value="Thank you for booking with PropertyX! Your reservation has been received. To complete your reservation, please make payment within 24 hours to:\n Nedbank\nAccount Number: 1263112900\n. Please use your booking ID as the payment reference and send your proof of payment to info@propertyx.co.za. Alternatively, call us at 047 491 0299 to arrange payment on arrival.\n\nPlease see your booking details below.">
             <p><strong>Room Type:</strong> <span id="displayRoomType"></span></p>
             <p><strong>Check-in:</strong> <span id="displayCheckin"></span></p>
             <p><strong>Check-out:</strong> <span id="displayCheckout"></span></p>
