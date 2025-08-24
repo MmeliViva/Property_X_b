@@ -2430,7 +2430,7 @@ section {
 .our-rooms:hover span,
 .our-rooms:hover h4,
 .our-rooms:hover p {
-  color: #ff7402;
+  color: #b45200;
 }
 /*--------------------------------------------------------------
 # Why Us
@@ -2730,7 +2730,7 @@ section {
 }
 
 .events p {
-  color: #fd7e14;
+  color: #b45200;
   font-size: 20px;
   margin: 0;
   padding: 0px 0px 40px 0px;
@@ -3001,7 +3001,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #fd7e14;
+  background-color: #b45200;
 }
 
 /*--------------------------------------------------------------
