@@ -16,21 +16,21 @@
     transition: 0.3s;
     line-height: 1;
     color: #ffffff;
-    background: #005e5e;
+    background: #ff7606;
     box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
     
   }
   
   .reservationsection .btn-book:hover {
     color: #ffffff;
-    background: #6aaaaa;
+    background: #ffa45a;
     border: 2px solid #ffffff;
     box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
   }
   
   
   .our-rooms .box:hover {
-    background: #6AAAAA;
+    background: #ffa45a;
     padding: 30px 30px 70px 30px;
     box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
   }
@@ -93,7 +93,7 @@
   /* Button styling */
   button {
     padding: 10px 20px;
-    background-color: #007bff; /* Professional blue */
+    background-color: #ffa45a; /* Professional blue */
     color: white;
     border: none;
     border-radius: 4px;
@@ -103,7 +103,7 @@
   }
   
   button:hover {
-    background-color: #6AAAAA; /* Darker blue on hover */
+    background-color: #ffa45a; /* Darker blue on hover */
   }
   
   /* Placeholder styling */
@@ -113,7 +113,7 @@
   
   /* Focus states for accessibility and interaction */
   input:focus, select:focus {
-    border-color: #007bff; /* Matches button color */
+    border-color: #ffa45a; /* Matches button color */
     outline: none; /* Removes default outline */
   }
   

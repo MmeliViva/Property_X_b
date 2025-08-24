@@ -28,7 +28,7 @@
 .btn-get-started {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #005e5e;
+  background-color: #fd7e14;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -36,9 +36,9 @@
 }
 
 .btn-get-started:hover {
-  background-color: #6AAAAA;
+  background-color: #fd7e14;
   color: #fff;
-  border: 1px solid #005e5e;
+  border: 1px solid #fd7e14;
 }
 
 
@@ -54,12 +54,12 @@ body {
 }
 
 a {
-  color: #6AAAAA;
+  color: #fd7e14;
   text-decoration: none;
 }
 
 a:hover {
-  color: #6AAAAA;
+  color: #fd7e14;
   text-decoration: none;
 }
 
@@ -120,7 +120,7 @@ h6 {
   line-height: 24px;
   color: var(--color-default);
   text-align: left;
-  background: #6AAAAA;
+  background: #fd7e14;
   box-shadow: none;
   border-radius: 10px;
 }
@@ -146,7 +146,7 @@ h6 {
 
 .faq .accordion-body {
   padding: 20px 40px 30px 45px; /* Adjusted top padding for consistency */
-  background: #005e5e; /* Matches your teal */
+  background: #fd7e14; /* Matches your teal */
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -175,8 +175,8 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #1a1814;
-  border-top-color: #6AAAAA;
-  border-bottom-color: #6AAAAA;
+  border-top-color: #fd7e14;
+  border-bottom-color: #fd7e14;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -548,7 +548,7 @@ h6 {
   color: black;
 }
 .icon-color {
-  color: #005e5e;
+  color: #fd7e14;
 }
 
 /*--------------------------------------------------------------
@@ -567,7 +567,7 @@ h6 {
   height: 46px;
   /* border-radius: 50px; */
   transition: all 0.4s;
-  background-color: #005e5e;
+  background-color: #fd7e14;
 }
 
 .whatsapp-chat i {
@@ -606,17 +606,17 @@ h6 {
   height: 44px;
   border-radius: 50px;
   transition: all 0.4s;
-  border: 2px solid #6AAAAA;
+  border: 2px solid #fd7e14;
 }
 
 .back-to-top i {
   font-size: 28px;
-  color: #6AAAAA;
+  color: #fd7e14;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #6AAAAA;
+  background: #fd7e14;
   color: #1a1814;
 }
 
@@ -655,7 +655,7 @@ h6 {
 
 #topbar .contact-info i {
   font-style: normal;
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 #topbar .contact-info i span {
@@ -820,7 +820,7 @@ h6 {
 --------------------------------------------------------------*/
 .view-products-btn {
   margin: 0 0 0 15px;
-  border: 2px solid #6AAAAA;
+  border: 2px solid #fd7e14;
   color: #fff;
   border-radius: 50px;
   padding: 8px 25px;
@@ -832,7 +832,7 @@ h6 {
 }
 
 .view-products-btn:hover {
-  background: #6AAAAA;
+  background: #fd7e14;
   color: #fff;
 }
 
@@ -845,7 +845,7 @@ h6 {
 
 .view-products-foot-btn {
   margin: 0 0 0 15px;
-  border: 2px solid #6AAAAA;
+  border: 2px solid #fd7e14;
   color: #fff;
   border-radius: 50px;
   padding: 8px 25px;
@@ -857,7 +857,7 @@ h6 {
 }
 
 .view-products-foot-btn:hover {
-  background: #6AAAAA;
+  background: #fd7e14;
   color: #fff;
 }
 
@@ -922,7 +922,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 .navbar .dropdown ul {
@@ -957,7 +957,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 .navbar .dropdown:hover>ul {
@@ -1054,7 +1054,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 .navbar-mobile .getstarted,
@@ -1089,7 +1089,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -1163,7 +1163,7 @@ h6 {
 
 
 #hero h1 span {
-  color: #0ca1a1;
+  color: #ff780a;
 }
 
 #hero h2 {
@@ -1190,12 +1190,12 @@ h6 {
   transition: 0.3s;
   line-height: 1;
   color: white;
-  border: 2px solid #6AAAAA;
+  border: 2px solid #fd7e14;
 }
 
 #hero .btn-menu:hover,
 #hero .btn-book:hover {
-  background: #6AAAAA;
+  background: #fd7e14;
   color: #fff;
 }
 
@@ -1206,7 +1206,7 @@ h6 {
 #hero .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#6AAAAA 50%, rgba(205, 164, 94, 0.4) 52%);
+  background: radial-gradient(#fd7e14 50%, rgba(205, 164, 94, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -1247,7 +1247,7 @@ h6 {
 }
 
 #hero .play-btn:hover::after {
-  border-left: 15px solid #6AAAAA;
+  border-left: 15px solid #fd7e14;
   transform: scale(20);
 }
 
@@ -1383,7 +1383,7 @@ h6 {
   }
 }
 /* #hero h1 span {
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 #hero h2 {
@@ -1409,12 +1409,12 @@ h6 {
   transition: 0.3s;
   line-height: 1;
   color: white;
-  border: 2px solid #6AAAAA;
+  border: 2px solid #fd7e14;
 }
 
 #hero .btn-menu:hover,
 #hero .btn-book:hover {
-  background: #6AAAAA;
+  background: #fd7e14;
   color: #fff;
 }
 
@@ -1757,7 +1757,7 @@ h6 {
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #005e5e;
+  color: #fd7e14;
   background: rgba(255, 255, 255, 0.8);
   width: 40px;
   height: 40px;
@@ -1789,7 +1789,7 @@ h6 {
 
 .thumbnail-slider .swiper-slide-thumb-active {
   opacity: 1;
-  border: 2px solid #005e5e; /* Highlight active thumbnail */
+  border: 2px solid #fd7e14; /* Highlight active thumbnail */
 }
 
 .thumbnail-img {
@@ -1887,7 +1887,7 @@ h6 {
 
 .details-info__item {
   font-size: 1rem;
-  color: #005e5e;
+  color: #fd7e14;
   margin-bottom: 10px;
 }
 
@@ -2029,7 +2029,7 @@ section {
   font-size: 32px;
   font-weight: 100;
   font-family: 'Lucida Handwriting';
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 /*--------------------------------------------------------------
@@ -2167,8 +2167,8 @@ section {
   height: 60px;
   z-index: 1;
   content: "";
-  border-left: 5px solid #6AAAAA;
-  border-top: 5px solid #6AAAAA;
+  border-left: 5px solid #fd7e14;
+  border-top: 5px solid #fd7e14;
   transition: 0.4s;
 }
 
@@ -2180,8 +2180,8 @@ section {
   height: 60px;
   z-index: 2;
   content: "";
-  border-right: 5px solid #6AAAAA;
-  border-bottom: 5px solid #6AAAAA;
+  border-right: 5px solid #fd7e14;
+  border-bottom: 5px solid #fd7e14;
   transition: 0.5s;
 }
 
@@ -2291,7 +2291,7 @@ section {
 } 
 
 .our-rooms {
-  background: #f0f7f7;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .img-our-rooms {
@@ -2392,7 +2392,7 @@ section {
 
 
 .our-rooms  p {
-  color: #005e5e;
+  color: #fd7e14;
   font-size: 20px;
   margin: 0;
   padding: 0px 0px 40px 0px;
@@ -2411,18 +2411,18 @@ section {
   border-radius: 50px;
   transition: 0.3s;
   line-height: 1;
-  color: #005e5e;
-  border: 2px solid #005e5e;
+  color: #fd7e14;
+  border: 2px solid #fd7e14;
 }
 
 .our-rooms .btn-menu:hover {
   color: #ffffff;
-  background: #005e5e;
+  background: #fd7e14;
 }
 
 
 .our-rooms .box:hover {
-  background: #6AAAAA;
+  background: #fd7e14;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -2430,7 +2430,7 @@ section {
 .our-rooms:hover span,
 .our-rooms:hover h4,
 .our-rooms:hover p {
-  color: #013147;
+  color: #ff7402;
 }
 /*--------------------------------------------------------------
 # Why Us
@@ -2446,7 +2446,7 @@ section {
   display: block;
   font-size: 28px;
   font-weight: 200;
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 .why-us .box h4 {
@@ -2465,7 +2465,7 @@ section {
 }
 
 .why-us .box:hover {
-  background: #6AAAAA;
+  background: #fd7e14;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -2503,7 +2503,7 @@ section {
 
 .menu #menu-flters li:hover,
 .menu #menu-flters li.filter-active {
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 .menu #menu-flters li:last-child {
@@ -2551,7 +2551,7 @@ section {
 }
 
 .menu .menu-content a:hover {
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 .menu .menu-content span {
@@ -2560,7 +2560,7 @@ section {
   z-index: 3;
   padding: 0 10px;
   font-weight: 100;
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 .menu .menu-ingredients {
@@ -2588,23 +2588,23 @@ section {
   transition: 0.3s;
   color: #fff;
   border-radius: 0;
-  border-right: 2px solid #6AAAAA;
+  border-right: 2px solid #fd7e14;
   font-weight: 100;
   font-size: 15px;
 }
 
 .specials .nav-link:hover {
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 .specials .nav-link.active {
   color: #1a1814;
-  background: #6AAAAA;
-  border-color: #6AAAAA;
+  background: #fd7e14;
+  border-color: #fd7e14;
 }
 
 .specials .nav-link:hover {
-  border-color: #6AAAAA;
+  border-color: #fd7e14;
 }
 
 .specials .tab-pane.active {
@@ -2680,7 +2680,7 @@ section {
 .events .event-item h3 {
   font-weight: 100;
   font-size: 26px;
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 .events .event-item .price {
@@ -2691,7 +2691,7 @@ section {
 }
 
 .events .event-item .price span {
-  border-bottom: 2px solid #6AAAAA;
+  border-bottom: 2px solid #fd7e14;
 }
 
 .events .event-item ul {
@@ -2706,7 +2706,7 @@ section {
 .events .event-item ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 .events .event-item p:last-child {
@@ -2726,11 +2726,11 @@ section {
 }
 
 .events .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #6AAAAA;
+  background-color: #fd7e14;
 }
 
 .events p {
-  color: #005e5e;
+  color: #fd7e14;
   font-size: 20px;
   margin: 0;
   padding: 0px 0px 40px 0px;
@@ -2872,7 +2872,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #6AAAAA;
+  border: 3px solid #fd7e14;
   border-top-color: #1a1814;
   animation: animate-loading 1s linear infinite;
 }
@@ -2899,7 +2899,7 @@ section {
 
 .book-a-table .php-email-form input:focus,
 .book-a-table .php-email-form textarea:focus {
-  border-color: #6AAAAA;
+  border-color: #fd7e14;
 }
 
 .book-a-table .php-email-form input {
@@ -2911,7 +2911,7 @@ section {
 }
 
 .book-a-table .php-email-form button[type=submit] {
-  background: #6AAAAA;
+  background: #fd7e14;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -3001,7 +3001,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #6AAAAA;
+  background-color: #fd7e14;
 }
 
 /*--------------------------------------------------------------
@@ -3082,7 +3082,7 @@ section {
 }
 
 .chefs .member .social a:hover {
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 .chefs .member .social i {
@@ -3118,7 +3118,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #6AAAAA;
+  background: #fd7e14;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3130,7 +3130,7 @@ section {
 .contact .info h4 {
   padding: 0 0 0 60px;
   font-weight: 100;
-  color: #005e5e;
+  color: #fd7e14;
   margin-bottom: 5px;
   font-size: 18px;
   margin: 0;
@@ -3200,7 +3200,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #6AAAAA;
+  border: 3px solid #fd7e14;
   border-top-color: #1a1814;
   animation: animate-loading 1s linear infinite;
 }
@@ -3210,7 +3210,7 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  background: #6AAAAA;
+  background: #fd7e14;
   border-color: #625b4b;
   color: rgb(0, 0, 0);
 }
@@ -3239,7 +3239,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #6AAAAA;
+  background: #fd7e14;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -3248,7 +3248,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #005e5e;
+  background: #fd7e14;
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -3303,7 +3303,7 @@ section {
   text-align: left; 
 }
 .our-rooms  p {
-  color: #005e5e;
+  color: #fd7e14;
   font-size: 20px;
   margin: 0;
   padding: 0px 0px 40px 0px;
@@ -3328,7 +3328,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #6AAAAA;
+  background: #fd7e14;
   color: #fff;
   text-decoration: none;
 }
@@ -3353,7 +3353,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #6AAAAA;
+  color: #fd7e14;
   font-size: 18px;
   line-height: 1;
 }
@@ -3376,7 +3376,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #6AAAAA;
+  color: #fd7e14;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -3405,7 +3405,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px 2px 20px;
-  background: #6AAAAA;
+  background: #fd7e14;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
