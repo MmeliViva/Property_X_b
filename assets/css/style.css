@@ -1626,10 +1626,12 @@ h6 {
 
 /* Buttons */
 .room-item-card__booking-btn {
+
   padding: 10px 20px;
   font-size: 1rem;
   border-radius: 8px; /* Softer corners */
   transition: all 0.3s ease;
+  
 }
 
 .room-item-card__booking-btn--details.btn-arrow {
@@ -1640,6 +1642,12 @@ h6 {
 
 .room-item-card__booking-btn--book {
   font-weight: 600;
+  border-radius: 4px;
+  transition: 0.3s;
+  color: #ffffff;
+  background: #ff7606;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.195);
+  border: none;
 }
 
 /* Responsive Adjustments */
