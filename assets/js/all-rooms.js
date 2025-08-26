@@ -1,13 +1,13 @@
 // Room data (single source of truth)
 const roomsData = [
   {
-    type: "Standard Room",
+    type: "Guest House",
     price: 700,
     location: "Butterworth B&B",
     size: "40 m²",
     capacity: "max. 2 pers.",
     amenities: ["Free Wi-Fi", "TV", "Bathroom with Shower"],
-    images: ["assets/img/standard_room.jpeg","assets/img/bibby's1.jpg", "assets/img/gallery/bathroom/bibbys_bath_1.jpg"],
+    images: ["PropertyX images/Furnished/Furnished PropertyX6.jpg","PropertyX images/Furnished/furnished_ProertyX2.jpg", "PropertyX images/Furnished/Furnished PropertyX7.jpg"],
     detailsLink: "room_standard.html"
   },
   {
