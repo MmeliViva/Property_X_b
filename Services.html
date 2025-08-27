@@ -3,19 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
 
-  <title>Gallery | PropertyX</title>
-  <meta name="description" content="Take a look at our gallery to see the beautiful rooms and amenities we offer at PropertyX.">
-
-  <meta name="keywords" content="family room, BNB, guesthouse, cozy stay, spacious room, group accommodation, family-friendly hotel, vacation rental, holiday stay, best BNB for families">
+  <title>More Services | PropertyX</title>
+  <meta name="description" content="Beyond accommodation: PropertyX supplies firewood for weddings, funerals, and events, plus delivery, braai packs, cleaning, laundry add-ons, and more.">
+  <meta name="keywords" content="firewood for weddings, funeral firewood, event firewood delivery, braai wood, delivery and stacking, laundry, cleaning service, shuttle">
   <meta name="author" content="PropertyX">
   <meta name="robots" content="index, follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Gallery | PropertyX - Spacious & Cozy Stay">
-  <meta property="og:description" content="Enjoy a comfortable stay in our Family Room at PropertyX. Spacious, modern, and perfect for families and groups. Book now!">
-  <meta property="og:image" content="assets\img\pexels-curtis-adams-1694007-8031934.jpg">
-  <meta property="og:url" content="gallery.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="More Services | PropertyX">
+  <meta property="og:description" content="Firewood for events with delivery & stacking, braai packs, and convenient add-ons from PropertyX.">
+  <meta property="og:image" content="assets/img/og/propertyx-services.jpg"><!-- TODO: replace -->
+  <meta property="og:url" content="https://www.your-domain.co.za/services.html">
   <meta property="og:site_name" content="PropertyX">
   <meta property="og:type" content="website">
 
@@ -24,29 +24,128 @@
   <link href="assets/img/icons/bibbys-logo-small.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600,700|Poppins:400,500,600,700" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  
+  <!-- Vendor CSS -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <!-- Template Main CSS File -->
+
+  <!-- Site CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/reservation.css" rel="stylesheet">
   <link href="assets/css/loader.css" rel="stylesheet">
-  <!-- Lightbox2 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
 
+  <!-- Page-scoped styles -->
+  <style>
+    :root{
+      --px-accent:#fd7e14;
+      --px-accent-200:#ff9440;
+      --px-dark:#111;
+      --px-muted:#6b7280;
+      --px-border:#e5e7eb;
+    }
 
+    /* ===== Hero (scoped) ===== */
+    .services-hero{
+      position:relative; min-height:100vh; display:flex; align-items:center; color:#fff; overflow:hidden;
+    }
+    .services-hero .hero-bg{
+      position:absolute; 
+      inset:0;
+      background:
+        linear-gradient(120deg, rgba(0,0,0,.55), rgba(0,0,0,.35)),
+        url("PropertyX images/Other_services/other_services_hero.jpg") center/cover no-repeat; /* TODO: replace */
+    }
+    .services-hero .hero-card{
+      position:relative; z-index:1; border-radius:18px;
+      background: rgba(17,17,17,.35);
+      border:1px solid rgba(255,255,255,.15);
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      padding:22px 22px 18px; box-shadow:0 12px 40px rgba(0,0,0,.28);
+    }
+    .services-hero .brand-tag{
+      display:inline-block; font-weight:700; letter-spacing:.3px; margin-bottom:.5rem;
+      color:#111; background:var(--px-accent); padding:.35rem .75rem; border-radius:999px;
+      box-shadow:0 10px 24px rgba(253,126,20,.35);
+    }
+    .services-hero h1{
+      font-size:clamp(2rem, 2.6vw + 1rem, 3rem); line-height:1.1; margin:.2rem 0 .6rem;
+    }
+    .services-hero p.lead{
+      color:#e9ecef; margin-bottom:1rem; font-size:1.05rem;
+    }
+    .services-hero .btn-accent{
+      display:inline-flex; align-items:center; gap:.5rem;
+      background:var(--px-accent); color:#111; border:0;
+      padding:.8rem 1.1rem; border-radius:12px; font-weight:700; text-decoration:none;
+      box-shadow:0 10px 24px rgba(253,126,20,.35);
+      transition:.2s ease all;
+    }
+    .services-hero .btn-accent:hover{ background:var(--px-accent-200); transform:translateY(-1px); }
 
+    /* ===== Services Grid ===== */
+    .services-wrap{ padding:56px 0 16px; }
+    .section-eyebrow{
+      text-transform:uppercase; letter-spacing:.18em; font-weight:700; font-size:.82rem; color:var(--px-accent);
+    }
+    .section-title{ font-size:2rem; margin:.3rem 0 .25rem; }
+    .section-sub{ color:var(--px-muted); }
 
+    .service-card{
+      border:1px solid var(--px-border); border-radius:16px; overflow:hidden; height:100%;
+      background:#fff; transition:.25s ease transform, .25s ease box-shadow;
+      box-shadow:0 8px 28px rgba(0,0,0,.06);
+    }
+    .service-card:hover{ transform: translateY(-3px); box-shadow:0 16px 42px rgba(0,0,0,.12); }
+    .service-media{ position:relative; overflow:hidden; }
+    .service-media img{ width:100%; height:220px; object-fit:cover; transition: transform .5s ease; }
+    .service-card:hover .service-media img{ transform:scale(1.03); }
+    .service-body{ padding:18px; }
+    .service-body h3{ font-size:1.1rem; margin:0 0 .25rem; }
+    .service-body p{ color:#475569; margin:0 0 .5rem; }
+    .service-meta{ display:flex; gap:8px; flex-wrap:wrap; margin-top:.5rem; }
+    .badge-soft{
+      background:#fff7f0; color:#a24b00; border:1px solid #ffd4ad; border-radius:999px; padding:.25rem .6rem; font-size:.8rem; font-weight:600;
+    }
+    .service-cta{
+      display:flex; justify-content:space-between; align-items:center; margin-top:10px;
+    }
+    .service-cta a{ text-decoration:none; font-weight:600; color:var(--px-accent); }
+
+    /* ===== Packages ===== */
+    .packages{ padding:16px 0 8px; }
+    .pkg-card{
+      border:1px solid var(--px-border); border-radius:16px; padding:18px; height:100%; background:#fff;
+      box-shadow:0 8px 28px rgba(0,0,0,.06);
+    }
+    .pkg-title{ font-size:1.05rem; font-weight:700; margin-bottom:.25rem; }
+    .pkg-sub{ color:var(--px-muted); margin-bottom:.6rem; }
+    .pkg-meta{ font-size:.92rem; color:#1f2937; }
+    .pkg-meta i{ color:var(--px-accent); margin-right:6px; }
+
+    /* ===== How it works ===== */
+    .how{ padding:24px 0 8px; }
+    .how .step{
+      background:#fff; border:1px solid var(--px-border); border-radius:16px; padding:18px; height:100%;
+      box-shadow:0 8px 28px rgba(0,0,0,.06);
+    }
+    .step-no{
+      width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center;
+      background:var(--px-accent); color:#111; border-radius:999px; font-weight:800; margin-right:8px;
+      box-shadow:0 8px 20px rgba(253,126,20,.35);
+    }
+
+    /* Map embed cleanup */
+    .embed-map-fixed{position:relative; text-align:right; width:100%; height:350px;}
+    .embed-map-container{overflow:hidden; background:none!important; width:100%; height:350px;}
+    .embed-map-frame{width:100%!important; height:350px!important;}
+
+    /* Small utilities */
+    .muted{ color:var(--px-muted); }
+  </style>
 </head>
 
 <body>
@@ -54,15 +153,11 @@
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-center justify-content-md-between">
-
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-chat-square-text align-items-center fs-8"><span> info@propertyx.co.za</span></i>
       </div>
-
       <div class="languages d-none d-md-flex align-items-center">
-        <ul>
-          <li>Your Home Away From Home</li>
-        </ul>
+        <ul><li>Your Home Away From Home</li></ul>
       </div>
     </div>
   </div>
@@ -70,33 +165,31 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container-fluid d-flex align-items-center justify-content-between">
-      <!-- Logo on the left -->
       <div class="logo-container d-flex flex-column align-items-center">
         <a href="index.html" class="logo me-auto me-lg-0">
           <img src="assets/img/icons/bibbys-logo-small.png"
-            style="background-color: rgba(253, 253, 253, 0.521); border-radius: 15px;padding: 2px;" alt=""
-            class="header-img">
+               style="background-color: rgba(253, 253, 253, 0.521); border-radius: 15px; padding: 2px;"
+               alt="PropertyX logo"
+               class="header-img">
         </a>
-        <!-- <h4 class="logo-text phone-off">
-          <a href="index.html">PropertyX</a>
-        </h4> -->
       </div>
-  
-      <!-- Navbar and toggle -->
+
       <div class="nav-container">
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
             <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-            
-            <li class="dropdown"><a href="rooms.html"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+
+            <li class="dropdown">
+              <a href="rooms.html"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="room_standard.html">Guesthouse</a></li>
                 <li><a href="room_shared.html">Furnished</a></li>
                 <li><a href="room_family.html">Unfurnished</a></li>
-                <li><a href="Services.html">More Services</a></li>
-              </ul>  
-            <!--li><a class="nav-link scrollto" href="#about1">Attractions</a></li-->
-            <li><a class="nav-link scrollto active" href="gallery.html">More services</a></li>
+                <li><a class="active" href="services.html">More Services</a></li>
+              </ul>
+            </li>
+
+            <li><a class="nav-link scrollto" href="gallery.html">Gallery</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
             <li><a class="nav-link scrollto" href="FAQ.html">FAQ</a></li>
           </ul>
@@ -104,352 +197,321 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </div>
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero-portfolio" class="d-flex align-items-center">
-    <div class="container position-relative text-center text-lg-start center-items d-flex justify-content-center " data-aos="zoom-in" data-aos-delay="100">
-      <div class="row center-items d-flex justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.158); border-radius: 15px; padding: 10px; width: 100%;">
-        <h1>Welcome to <span>PropertyX!</h1>
-          <h2><span style="color:#fd7e14">We offer more services like fire wood for weddings, funerals and all events that needs fire wood. <h1>Scroll down to see more services.</h1></span>
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-
-        <!-- ======= About Potine Section ======= -->
-           <!-- Loader (optional, simplified) -->
-        <div class="loader">
-          <div class="loader-content">
-            <img src="assets/img/icons/bibbys-logo-small.png" alt="Bibby's BnB Logo" class="loader-logo">
-         
+  <!-- ======= Hero ======= -->
+  <section class="services-hero d-flex align-items-center" aria-label="More Services hero">
+    <div class="hero-bg" role="img" aria-label="Firewood and event services background"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center">
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+          <div class="hero-card">
+            <span class="brand-tag">PropertyX Services</span>
+            <h1>Firewood for events—and convenient add-ons that make hosting easy.</h1>
+            <p class="lead">We supply quality, seasoned wood for weddings, funerals, and community gatherings—plus delivery & stacking, braai packs, and more. Tell us your date and location; we’ll handle the rest.</p>
+            <a href="#contact" class="btn-accent"><i class="bi bi-chat-left-text"></i> Request a Quote</a>
           </div>
         </div>
-         
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
 
-
-<!--        <section class="reservationsection">
-          <div class="limiter">
-            <form id="reservations" method="get">
-              <div class="form-item">
-                <input type="text" id="checkin" name="startdate" placeholder="Check in" aria-label="Check in date" class="flatpickr-input" readonly>
-                <i class="icon-calendar fas fa-calendar-alt"></i>
-              </div>
-              <div class="form-item">
-                <input type="text" id="checkout" name="enddate" placeholder="Check out" aria-label="Check out date" class="flatpickr-input" readonly>
-                <i class="icon-calendar fas fa-calendar-alt"></i>
-              </div>
-              <div class="form-item">
-                <select name="adults" aria-label="Number of adults">
-                  <option value="1">1 Adult</option>
-                  <option value="2">2 Adults</option>
-                  <option value="3">3 Adults</option>
-                  <option value="4">4 Adults</option>
-                </select>
-              </div>
-              <div class="form-item">
-                <select name="children" aria-label="Number of children">
-                  <option value="0">0 Children</option>
-                  <option value="1">1 Child</option>
-                  <option value="2">2 Children</option>
-                  <option value="3">3 Children</option>
-                </select>
-              </div>
-              <div class="form-item submit">
-                <button class="btn-book" type="submit" data-room-type="">Book Online</button>
-              </div>
-            </form>
+  <main id="main">
+    <!-- ======= Services Overview ======= -->
+    <section class="services-wrap">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-lg-10" data-aos="fade-up">
+            <div class="section-eyebrow">What we offer</div>
+            <h2 class="section-title">High-quality event supplies & helpful add-ons</h2>
+            <p class="section-sub">Professional, reliable, and tailored to your occasion. Images below are placeholders—swap with your own photography.</p>
           </div>
-        </section>-->
+        </div>
 
-        
-        <!-- ======= Rooms Listing Section ======= -->
-        <section id="portfolio" class="portfolio section">
+        <div class="row g-4">
+          <!-- Firewood for Events -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <article class="service-card h-100">
+              <div class="service-media">
+                <img src="PropertyX images\Other_services\wood.jpg" alt="Stacked event firewood"><!-- TODO: replace -->
+              </div>
+              <div class="service-body">
+                <h3><i class="bi bi-fire"></i> Firewood for Weddings & Funerals</h3>
+                <p>Seasoned, clean-burning wood suitable for long ceremonies and community gatherings.</p>
+                <div class="service-meta">
+                  <span class="badge-soft">Kiln-dried/seasoned</span>
+                  <span class="badge-soft">Low smoke</span>
+                  <span class="badge-soft">Bulk pricing</span>
+                </div>
+                <div class="service-cta">
+                  <span class="muted">From small to large events</span>
+                  <a href="#packages">See packages →</a>
+                </div>
+              </div>
+            </article>
+          </div>
 
-          <!-- Section Title ->
-          <div class="container section-title" data-aos="fade-up">
-            <h2>Gallery</h2>
-            <h3>WHERE EVERY STAY FEELS LIKE HOME.</h3>
-     
-          </div><!- End Section Title ->
-    
-          <div class="container">
-            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-          
-                <!-- Pool Area ->
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                  <div class="portfolio-content h-100">
-                    <img src="assets/img/gallery/bibby_outside.jpg" class="img-fluid" alt="Relaxing Pool Area">
-                    <div class="portfolio-info">
-                      <h4>Pool Area</h4>
-                      <p>Unwind by our serene pool, perfect for a refreshing dip and relaxing under the sun.</p>
-                      <a href="assets/img/gallery/guestHouse_bibby.jpg" title="Relaxing Pool Area" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="portfolio-details.html" title="More Details" class="details-link"></a>
-                    </div>
-                  </div>
-                </div><!- End Portfolio Item -->
-          
-                <!-- Cozy Room 1 ->
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                  <div class="portfolio-content h-100">
-                    <img src="assets/img/bibby's6.jpg" class="img-fluid" alt="Cozy Double Room">
-                    <div class="portfolio-info">
-                      <h4>Family Room</h4>
-                      <p>Rest in a spacious rooms.</p>
-                      <a href="assets/img/bibby's6.jpg" title="Cozy Double Room" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="portfolio-details.html" title="More Details" class="details-link"></a>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item >
-          
-               
-          
-                <!-- Family Room ->
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                  <div class="portfolio-content h-100">
-                    <img src="assets/img/bibby's20.jpg" class="img-fluid" alt="Family-Friendly Room">
-                    <div class="portfolio-info">
-                      <h4>Double Room</h4>
-                      <p>Spacious double room for your friends and family.</p>
-                      <a href="assets/img/bibby's20.jpg" title="Family-Friendly Room" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="portfolio-details.html" title="More Details" class="details-link"></a>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item ->
-          
-                <!-- Deluxe Room ->
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                  <div class="portfolio-content h-100">
-                    <img src="assets/img/gallery/double_room.jpg" class="img-fluid" alt="Deluxe Room">
-                    <div class="portfolio-info">
-                      <h4>Double Room</h4>
-                      <p>Spacious double room for your friends and family.</p>
-                      <a href="assets/img/gallery/double_room.jpg" title="Deluxe Room" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="portfolio-details.html" title="More Details" class="details-link"></a>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-          
-                <!-- King Bed Room ->
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                  <div class="portfolio-content h-100">
-                    <img src="assets/img/gallery/bedroom_king_suite.jpg" class="img-fluid" alt="King Bed Room">
-                    <div class="portfolio-info">
-                      <h4>King Bed Room</h4>
-                      <p>Relax in style with a luxurious king-sized bed and elegant decor.</p>
-                      <a href="assets/img/gallery/bedroom_king_suite.jpg" title="King Bed Room" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="portfolio-details.html" title="More Details" class="details-link"></a>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item ->
+          <!-- Delivery & Stacking -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+            <article class="service-card h-100">
+              <div class="service-media">
+                <img src="PropertyX images\Other_services\bakkie.png" alt="Delivery truck with wood"><!-- TODO: replace -->
+              </div>
+              <div class="service-body">
+                <h3><i class="bi bi-truck"></i> Delivery & Stacking</h3>
+                <p>On-time delivery and neat stacking at your venue. We plan routes to meet your schedule.</p>
+                <div class="service-meta">
+                  <span class="badge-soft">Local radius</span>
+                  <span class="badge-soft">Timed drop-offs</span>
+                </div>
+                <div class="service-cta">
+                  <span class="muted">Quote by distance</span>
+                  <a href="#contact">Get a quote →</a>
+                </div>
+              </div>
+            </article>
+          </div>
 
-                 <!-- King Bed Suite ->
-                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                  <div class="portfolio-content h-100">
-                    <img src="assets/img/gallery/king_bed.jpg" class="img-fluid" alt="King Bed Suite">
-                    <div class="portfolio-info">
-                      <h4>King Bed Suite</h4>
-                      <p>Experience ultimate comfort in our spacious king bed suite.</p>
-                      <a href="assets/img/gallery/king_bed.jpg" title="King Bed Suite" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="portfolio-details.html" title="More Details" class="details-link"></a>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
+          <!-- Braai Packs -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <article class="service-card h-100">
+              <div class="service-media">
+                <img src="PropertyX images\Other_services\wood.jpg" alt="Braai packs prepared"><!-- TODO: replace -->
+              </div>
+              <div class="service-body">
+                <h3><i class="bi bi-basket3"></i> Braai Packs (Wood + Kindling)</h3>
+                <p>Convenient packs for guests and family gatherings—ready to light, easy to carry.</p>
+                <div class="service-meta">
+                  <span class="badge-soft">Ready-to-use</span>
+                  <span class="badge-soft">Add kindling</span>
+                </div>
+                <div class="service-cta">
+                  <span class="muted">Per-pack pricing</span>
+                  <a href="#contact">Order now →</a>
+                </div>
+              </div>
+            </article>
+          </div>
 
-                <!-- Double Room ->
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                  <div class="portfolio-content h-100">
-                    <img src="assets/img/gallery/bathroom/bathroom3.jpg" class="img-fluid" alt="Clean bathroom to help you relax at the end of the day">
-                    <div class="portfolio-info">
-                      <h4>Bathroom Suite</h4>
-                      <p>Clean bathroom to help you relax at the end of the day</p>
-                      <a href="assets/img/gallery/bathroom/bathroom3.jpg" title="Clean bathroom to help you relax at the end of the day" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="portfolio-details.html" title="More Details" class="details-link"></a>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
+          <!-- Cleaning -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <article class="service-card h-100">
+              <div class="service-media">
+                <img src="PropertyX images\Other_services\cleaning.webp" alt="Cleaning team"><!-- TODO: replace -->
+              </div>
+              <div class="service-body">
+                <h3><i class="bi bi-stars"></i> Cleaning & Turnover</h3>
+                <p>Post-event cleaning or regular turnover services for guesthouses and rentals.</p>
+                <div class="service-meta">
+                  <span class="badge-soft">Once-off</span>
+                  <span class="badge-soft">Scheduled</span>
+                </div>
+                <div class="service-cta">
+                  <span class="muted">By property size</span>
+                  <a href="#contact">Enquire →</a>
+                </div>
+              </div>
+            </article>
+          </div>
 
-                <!-- Outdoor Patio ->
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                  <div class="portfolio-content h-100">
-                    <img src="assets/img/gallery/bathroom/bathroom6.jpg" class="img-fluid" alt="Outdoor Patio">
-                    <div class="portfolio-info">
-                      <h4>Bathroom Suite</h4>
-                      <p>Clean bathroom to help you relax at the end of the day</p>
-                      <a href="assets/img/gallery/bathroom/bathroom6.jpg" title="Outdoor Patio" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="portfolio-details.html" title="More Details" class="details-link"></a>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item >
+          <!-- Laundry -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+            <article class="service-card h-100">
+              <div class="service-media">
+                <img src="PropertyX images\Other_services\cleaning.webp" alt="Laundry service"><!-- TODO: replace -->
+              </div>
+              <div class="service-body">
+                <h3><i class="bi bi-bag-check"></i> Laundry Add-On</h3>
+                <p>Linens, towels, and garment care with reliable turnaround times.</p>
+                <div class="service-meta">
+                  <span class="badge-soft">Per kg</span>
+                  <span class="badge-soft">Express available</span>
+                </div>
+                <div class="service-cta">
+                  <span class="muted">Per kg pricing</span>
+                  <a href="#contact">Enquire →</a>
+                </div>
+              </div>
+            </article>
+          </div>
 
-                      <!-- Outdoor Patio ->
-                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                        <div class="portfolio-content h-100">
-                          <img src="assets/img/gallery/bathroom/bathroom7.jpg" class="img-fluid" alt="Outdoor Patio">
-                          <div class="portfolio-info">
-                            <h4>Bathroom Suite</h4>
-                            <p>Clean bathroom to help you relax at the end of the day</p>
-                            <a href="assets/img/gallery/bathroom/bathroom7.jpg" title="Outdoor Patio" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"></a>
-                          </div>
-                        </div>
-                      </div><!-- End Portfolio Item -->
-          
-                <!-- Outdoor Patio ->
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                  <div class="portfolio-content h-100">
-                    <img src="assets/img/gallery/outside_1.jpg" class="img-fluid" alt="Outdoor Patio">
-                    <div class="portfolio-info">
-                      <h4>Reception Office</h4>
-                      <p>Reception area to handle all the administration</p>
-                      <a href="assets/img/gallery/outside_1.jpg" title="Outdoor Patio" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="portfolio-details.html" title="More Details" class="details-link"></a>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-          
-                <!-- Pool Area ->
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                  <div class="portfolio-content h-100">
-                    <img src="assets/img/gallery/outside/outside_pool_area_1.jpg" class="img-fluid" alt="Relaxing Pool Area">
-                    <div class="portfolio-info">
-                      <h4>Pool Area</h4>
-                      <p>Unwind by our serene pool, perfect for a refreshing dip and relaxing under the sun.</p>
-                      <a href="assets/img/gallery/outside/outside_pool_area_1.jpg" title="Relaxing Pool Area" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="portfolio-details.html" title="More Details" class="details-link"></a>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-          
-                
-                <!-- Garden View ->
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                  <div class="portfolio-content h-100">
-                    <img src="assets/img/bibby_garden1.jpg" class="img-fluid" alt="Garden View">
-                    <div class="portfolio-info">
-                      <h4>Garden View</h4>
-                      <p>Enjoy the tranquility of our lush garden, perfect for a peaceful retreat.</p>
-                      <a href="assets/img/bibby_garden1.jpg" title="Garden View" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="portfolio-details.html" title="More Details" class="details-link"></a>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-          
-              </div><!-- End Portfolio Container ->
+          <!-- Shuttle / Transfers -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <article class="service-card h-100">
+              <div class="service-media">
+                <img src="PropertyX images\Other_services\bakkie.png" alt="Shuttle transfers"><!-- TODO: replace -->
+              </div>
+              <div class="service-body">
+                <h3><i class="bi bi-geo-alt"></i> Shuttle & Transfers</h3>
+                <p>Convenient pick-ups for guests and event crew within our service area.</p>
+                <div class="service-meta">
+                  <span class="badge-soft">By arrangement</span>
+                  <span class="badge-soft">Group options</span>
+                </div>
+                <div class="service-cta">
+                  <span class="muted">Quote by route</span>
+                  <a href="#contact">Request route →</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Overview -->
+
+    <!-- ======= Packages (Firewood) ======= -->
+    <section id="packages" class="packages">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-lg-10" data-aos="fade-up">
+            <div class="section-eyebrow">Firewood Packages</div>
+            <h2 class="section-title">Simple options for any size event</h2>
+            <p class="section-sub">All packages can include delivery & stacking. Quantities below are estimates—tell us your duration and expected guests for tailored recommendations.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="pkg-card h-100">
+              <div class="pkg-title">Small Gathering</div>
+              <div class="pkg-sub">Braais & family events</div>
+              <ul class="list-unstyled pkg-meta">
+                <li><i class="bi bi-check-circle"></i> ~100–200 kg seasoned wood</li>
+                <li><i class="bi bi-check-circle"></i> Optional kindling & braai packs</li>
+                <li><i class="bi bi-check-circle"></i> Delivery available (local radius)</li>
+              </ul>
+              <a href="#contact" class="btn btn-sm btn-outline-dark mt-2">Request quote</a>
             </div>
-          </div-->
-
-        
-    
-        </section>
-
-        <section class="gallery">
-          <div class="gallery-grid">
-            <a href="PropertyX images\Furnished\Furnished propertyX1.jpg" data-lightbox="bnb-gallery" data-title="Spacious Standard Room">
-              <img src="PropertyX images\Furnished\Furnished propertyX1.jpg" alt="Room 1">
-            </a>
-            <a href="PropertyX images\Furnished\Furnished PropertyX3.jpg" data-lightbox="bnb-gallery" data-title="Kitchenette">
-              <img src="PropertyX images\Furnished\Furnished PropertyX3.jpg" alt="Room 2">
-            </a>  
-            <a href="PropertyX images\Furnished\Furnished PropertyX6.jpg" data-lightbox="bnb-gallery" data-title="Spacious Standard Room">
-              <img src="PropertyX images\Furnished\Furnished PropertyX6.jpg" alt="Room 1">
-            </a>
-            <a href="PropertyX images\Furnished\furnished_ProertyX2.jpg" data-lightbox="bnb-gallery" data-title="Bathroom Suite">
-              <img src="PropertyX images\Furnished\furnished_ProertyX2.jpg" alt="Room 2">
-            </a>
           </div>
-        </section>
-        
-<!-- End Rooms Listing Section -->
 
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="pkg-card h-100">
+              <div class="pkg-title">Ceremony Package</div>
+              <div class="pkg-sub">Weddings & funerals</div>
+              <ul class="list-unstyled pkg-meta">
+                <li><i class="bi bi-check-circle"></i> ~300–500 kg seasoned wood</li>
+                <li><i class="bi bi-check-circle"></i> Delivery & stacking at venue</li>
+                <li><i class="bi bi-check-circle"></i> On-time drop aligned to schedule</li>
+              </ul>
+              <a href="#contact" class="btn btn-sm btn-outline-dark mt-2">Request quote</a>
+            </div>
+          </div>
 
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pkg-card h-100">
+              <div class="pkg-title">Community/Event</div>
+              <div class="pkg-sub">Large gatherings</div>
+              <ul class="list-unstyled pkg-meta">
+                <li><i class="bi bi-check-circle"></i> ~700–1000 kg seasoned wood</li>
+                <li><i class="bi bi-check-circle"></i> Crew assisted offload & stacking</li>
+                <li><i class="bi bi-check-circle"></i> Bulk pricing available</li>
+              </ul>
+              <a href="#contact" class="btn btn-sm btn-outline-dark mt-2">Request quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Packages -->
 
-    <!-- ======= Contact Section ======= -->
+    <!-- ======= How it works ======= -->
+    <section class="how">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="section-eyebrow">How it works</div>
+            <h2 class="section-title">Simple, reliable, on time</h2>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="step h-100">
+              <div class="mb-2"><span class="step-no">1</span><strong>Share your details</strong></div>
+              <p class="muted">Event date, location, expected guests, estimated duration, and any extras (kindling, braai packs).</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="step h-100">
+              <div class="mb-2"><span class="step-no">2</span><strong>Get a tailored quote</strong></div>
+              <p class="muted">We suggest the right quantity and delivery window, then confirm your order.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="step h-100">
+              <div class="mb-2"><span class="step-no">3</span><strong>Delivery & stacking</strong></div>
+              <p class="muted">We deliver on time and stack neatly where you need it. You focus on the event.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End How it works -->
+
+    <!-- ======= Contact Section (kept, lightly refined) ======= -->
     <section id="contact" class="contact section-contact">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
           <h2>Query about more services</h2>
           <h3>Contact Us</h3>
         </div>
       </div>
 
-      
-
       <div class="container" data-aos="fade-up">
-
         <div class="row mt-5">
-
           <div class="col-lg-4">
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
-                <h4>Location 1:</h4>
-                <p>1697 Mcubakazi,  <br>
-                  Butterworth, 4960
-                 </p>
-                 <br>
-                 <h4>Location:</h4>
-                 <p>1698 Mcubakazi,  <br>
-                   Butterworth, 4960
-                  </p>
-                  
+                <h4>Locations:</h4>
+                <p>1697 Mcubakazi,<br>Butterworth, 4960</p>
+                <p>1698 Mcubakazi,<br>Butterworth, 4960</p>
               </div>
-          
+
               <div class="open-hours">
                 <i class="bi bi-clock"></i>
                 <h4>Front Desk:</h4>
-                <p>
-                  Monday-Friday: <br>
-                  8AM - 10PM (SAST)
-                </p>
-<p>
-                  Saturday-Sunday: <br>
-                  8AM - 7PM (SAST)
-                </p>
+                <p>Mon–Fri: 8AM – 10PM (SAST)</p>
+                <p>Sat–Sun: 8AM – 7PM (SAST)</p>
               </div>
-          
+
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
                 <p>info@propertyx.co.za</p>
               </div>
-          
+
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p><span>Tel :</span> +27 47 491 0299</p>
-                <p><span>Cel :</span> +27 64 513 9755</p>
+                <p><span>Tel:</span> +27 47 491 0299</p>
+                <p><span>Cell:</span> +27 64 513 9755</p>
               </div>
-              
-          
-              <div class="social-media ">
+
+              <div class="social-media">
                 <h4>See Us On</h4>
                 <p>
-                  
-                  <a href="https://www.facebook.com/profile.php?id=61573652679363" target="_blank" aria-label="Facebook" class="me-3">
+                  <a href="https://www.facebook.com/profile.php?id=61573652679363" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="me-3">
                     <img src="assets/img/icons/facebook.ico" alt="Facebook" class="social-icon">
                   </a>
-                  <a href="https://www.safarinow.com/go/bibbysguesthouseeastlondon/" target="_blank" aria-label="Instagram" class="me-3">
-                    <img src="assets/img/icons/safarinow.png" alt="Instagram" class="social-icon">
+                  <a href="https://www.safarinow.com/go/bibbysguesthouseeastlondon/" target="_blank" rel="noopener noreferrer" aria-label="SafariNow" class="me-3">
+                    <img src="assets/img/icons/safarinow.png" alt="SafariNow" class="social-icon">
                   </a>
-                  <a href="https://heybedbreakfast.co.za/01138509/Bibby's_B&B" target="_blank" aria-label="Pinterest">
-                    <img src="assets/img/icons/heybedbreakfast.png" alt="Pinterest" class="social-icon">
+                  <a href="https://heybedbreakfast.co.za/01138509/Bibby's_B&B" target="_blank" rel="noopener noreferrer" aria-label="Hey Bed & Breakfast">
+                    <img src="assets/img/icons/heybedbreakfast.png" alt="Hey Bed & Breakfast" class="social-icon">
                   </a>
                 </p>
               </div>
-          
             </div>
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <!-- <form action="https://formsubmit.co/info@propertyx.co.za" method="POST" role="form" class="php-email-form"> -->
             <form action="https://formsubmit.co/info@propertyx.co.za" method="POST" role="form" class="php-email-form">
-
+              <!-- Honeypot -->
+              <input type="text" name="_honey" style="display:none">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name (required)" required>
@@ -465,105 +527,34 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="8" placeholder="Tell us about your event (date, location, quantity, extras)"></textarea>
               </div>
+              <!-- Hidden config -->
               <div class="form-group mt-3">
-                <input type="hidden" class="form-control" name="_subject" value="PropertyX - Accommodation Query" required>
-                <input type="hidden" name="_autoresponse" value="Thank you for contacting PropertyX, a team member will reach out to you soon">
+                <input type="hidden" name="_subject" value="PropertyX - Services Query" required>
+                <input type="hidden" name="_autoresponse" value="Thank you for contacting PropertyX. We’ll get back to you soon.">
                 <input type="hidden" name="_next" value="https://butterworth-bnb-sandy.vercel.app/thank_you.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="box">
               </div>
-              
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-
-          </div>
-
-        </div>
-
-      </div>
-      <br>
-      <br>
-
-      <div id = 'map' class="embed-map-fixed"><div class="embed-map-container"><iframe class="embed-map-frame" loading="lazy" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=61+King+Street%2C+Butterworth%2C+4960&output=embed"></iframe><a href="https://sprunkiretake.net" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki retake</a></div><style>.embed-map-fixed{position:relative;text-align:right;width:100%;height:350px;}.embed-map-container{overflow:hidden;background:none!important;width:100%;height:350px;}.embed-map-frame{width:100%!important;height:350px!important;}</style></div>
-    </section><!-- End Contact Section -->
-
-
-
-
-    
-
-
-
-    <!-- Booking Confirmation Modal -->
-    <!-- <div class="modal fade" id="bookingConfirmationModal" tabindex="-1" aria-labelledby="bookingConfirmationModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="bookingConfirmationModalLabel">Confirm Your Booking</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form id="bookingForm" action="https://formsubmit.co/your-email@example.com" method="POST">
-              <input type="hidden" id="confirmRoomType" name="roomType">
-              <input type="hidden" id="confirmRoomPrice" name="roomPrice">
-              <input type="hidden" id="confirmCheckin" name="checkin">
-              <input type="hidden" id="confirmCheckout" name="checkout">
-              <input type="hidden" id="confirmAdults" name="adults">
-              <input type="hidden" id="confirmChildren" name="children">
-              <input type="hidden" id="confirmTotalCost" name="totalCost">
-              <p><strong>Room Type:</strong> <span id="displayRoomType"></span></p>
-              <p><strong>Check-in:</strong> <span id="displayCheckin"></span></p>
-              <p><strong>Check-out:</strong> <span id="displayCheckout"></span></p>
-              <p><strong>Adults:</strong> <span id="displayAdults"></span></p>
-              <p><strong>Children:</strong> <span id="displayChildren"></span></p>
-              <p><strong>Total Cost:</strong> R<span id="displayTotalCost"></span></p>
-              <button type="submit" class="btn btn-success">Confirm Booking</button>
-            </form>
           </div>
         </div>
       </div>
-    </div> -->
 
-  <!-- <div class="modal fade" id="bookingInfoModal" tabindex="-1" aria-labelledby="bookingInfoModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="bookingInfoModalLabel">Your Booking Information</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p><strong>Room Type:</strong> <span id="infoRoomType"></span></p>
-          <p><strong>Check-in Date:</strong> <span id="infoCheckin"></span></p>
-          <p><strong>Check-out Date:</strong> <span id="infoCheckout"></span></p>
-          <p><strong>Adults:</strong> <span id="infoAdults"></span></p>
-          <p><strong>Children:</strong> <span id="infoChildren"></span></p>
-          <p><strong>Total Cost:</strong> R<span id="infoTotalCost"></span></p>
-          <hr>
-          <h5>Payment Instructions</h5>
-          <p>Please make your payment to the following bank account within the next 24 hours:</p>
-          <p><strong>Bank:</strong> Example Bank</p>
-          <p><strong>Account Number:</strong> 123456789</p>
-          <p><strong>Account Name:</strong> Butterworth B&B</p>
-          <p><strong>Reference:</strong> Your Booking ID (provided upon confirmation)</p>
-          <hr>
-          <p><strong>Payment Confirmation Pending</strong></p>
-          <p>Your booking will be confirmed once we receive your payment.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <br><br>
+      <!-- Clean map embed (spam link removed) -->
+      <div id="map" class="embed-map-fixed" aria-label="Location Map">
+        <div class="embed-map-container">
+          <iframe class="embed-map-frame" loading="lazy" frameborder="0" scrolling="no"
+                  src="https://maps.google.com/maps?q=61+King+Street%2C+Butterworth%2C+4960&output=embed"
+                  title="PropertyX location: 61 King Street, Butterworth"></iframe>
         </div>
       </div>
-    </div>
-  </div> -->
-
-
-  <!-- JavaScript for reservation.js -->
-
-
-
-  </main><!-- End #main -->
+    </section>
+    <!-- End Contact Section -->
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -574,25 +565,9 @@
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
               <h3>PropertyX</h3>
-              <p>
-                61 King Street,  <br>
-                  Butterworth, 4960
-                  </p>
-                  <br>
-                  <p>
-                    No3 Fennel Street,  <br>
-                    Butterworth, 4960
-                      </p>
-                  
-                <!-- <strong>Phone:</strong> 047 491 5187<br>
-                <strong>Cell:</strong> 064 513 9755<br>
-                <strong>Fax:</strong> 047 491 5187<br>
-                <strong>Email:</strong> info@propertyx.co.za<br> -->
-              <!-- </p>
-              <div class="social-links mt-3">
-                <a href="https://www.facebook.com/profile.php?id=61573652679363" class="facebook" target="_blank" aria-label="Instagram" class="me-2" style="box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);"><i class="bx bxl-facebook"></i></a>
-      
-              </div> -->
+              <p>61 King Street,<br>Butterworth, 4960</p>
+              <br>
+              <p>No3 Fennel Street,<br>Butterworth, 4960</p>
             </div>
           </div>
 
@@ -602,11 +577,9 @@
               <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="index.html#team">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="rooms.html">Our Rooms</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">More Services</a></li>
             </ul>
           </div>
-
-
-          
 
         </div>
       </div>
@@ -617,49 +590,36 @@
         &copy; Copyright <strong><span>PropertyX</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="https://www.e-funda.com/">E-Funda Web</E-Funda></a>
+        Designed by <a href="https://www.e-funda.com/" target="_blank" rel="noopener noreferrer">E-Funda Web</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
+  <!-- End Footer -->
 
-  <!-- <div id="preloader"></div> -->
-  <a href="https://api.whatsapp.com/send/?phone=27829769630&text&app_absent=0" 
-   class="whatsapp-chat d-flex align-items-center justify-content-center" 
-   data-bs-toggle="tooltip" 
-   data-bs-placement="top" 
-   title="Chat on WhatsApp">
-   <i class="bi bi-whatsapp"></i>
-</a>
+  <!-- WhatsApp FAB -->
+  <a href="https://api.whatsapp.com/send/?phone=27829769630&text&app_absent=0"
+     class="whatsapp-chat d-flex align-items-center justify-content-center"
+     data-bs-toggle="tooltip" data-bs-placement="top" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+     <i class="bi bi-whatsapp"></i>
+  </a>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
-  <!-- Vendor JS Files -->
-   <!--Start of the Booking Widget script-->
-
-<!--    
-
-   -->
-    <!-- JavaScript for main.js (Flatpickr initialization) -->
-
-
+  <!-- Vendor JS -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
-  <!-- Template Main JS File -->
+  <!-- Site JS -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/reservation.js"></script>
-  <script src="assets/js/all-rooms.js"></script>
-  
-  <script src="assets/js/loader.js"></script>
-  <!-- Lightbox2 JS -->
-<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
+  <!-- Init AOS (if not already done globally) -->
+  <script>
+    if (typeof AOS !== 'undefined') { AOS.init({ once: true, duration: 700, easing: 'ease-out-quart' }); }
+  </script>
 </body>
-
 </html>
