@@ -12,22 +12,22 @@ const roomsData = [
   },
   {
     type: "Sharing Room",
-    price: 800,
+    price: 700,
     location: "Butterworth B&B",
     size: "45 m²",
     capacity: "max. 4 pers.",
     amenities: ["Free Wi-Fi", "TV", "Bathroom with Shower"],
-    images: ["assets/img/two_single_bed.jpeg", "assets/img/bibby's19.jpg", "assets/img/gallery/bathroom/bibbys_bath_1.jpg"],
+    images: ["PropertyX images\Furnished\Furnished PropertyX6.jpg", "PropertyX images/Furnished/Furnished PropertyX6.jpg", "PropertyX images\Unfurnished\IMG-20250814-WA0030.jpg"],
     detailsLink: "room_shared.html"
   },
   {
     type: "Family Room",
-    price: 900,
+    price: 700,
     location: "Butterworth B&B",
     size: "60 m²",
     capacity: "max. 5 pers.",
     amenities: ["Free Wi-Fi", "TV", "Bathroom with Shower"],
-    images: ["assets/img/gallery/double_room.jpg", "assets/img/gallery/king_bed.jpg", "assets/img/gallery/bathroom/bibbys_bath_1.jpg"],
+    images: ["PropertyX images\Furnished\Furnished PropertyX3.jpg", "PropertyX images\Furnished\Furnished PropertyX3.jpg", "PropertyX images\Unfurnished\IMG-20250814-WA0030.jpg"],
     detailsLink: "room_family.html"
   }
 ];
