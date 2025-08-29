@@ -17,7 +17,7 @@ const roomsData = [
     size: "45 m²",
     capacity: "max. 4 pers.",
     amenities: ["Free Wi-Fi", "TV", "Bathroom with Shower"],
-    images: ["PropertyX images\Furnished\Furnished PropertyX6.jpg", "PropertyX images/Furnished/Furnished PropertyX6.jpg", "PropertyX images\Unfurnished\IMG-20250814-WA0030.jpg"],
+    images: ["PropertyX images/Furnished/Furnished PropertyX6.jpg", "PropertyX images/Furnished/Furnished PropertyX6.jpg", "PropertyX images\Unfurnished\IMG-20250814-WA0030.jpg"],
     detailsLink: "room_shared.html"
   },
   {
@@ -27,7 +27,7 @@ const roomsData = [
     size: "60 m²",
     capacity: "max. 5 pers.",
     amenities: ["Free Wi-Fi", "TV", "Bathroom with Shower"],
-    images: ["PropertyX images\Furnished\Furnished PropertyX3.jpg", "PropertyX images\Furnished\Furnished PropertyX3.jpg", "PropertyX images\Unfurnished\IMG-20250814-WA0030.jpg"],
+    images: ["PropertyX images\Furnished\Furnished PropertyX3.jpg", "PropertyX images/Furnished/Furnished PropertyX3.jpg", "PropertyX images\Unfurnished\IMG-20250814-WA0030.jpg"],
     detailsLink: "room_family.html"
   }
 ];
