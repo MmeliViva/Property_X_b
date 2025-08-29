@@ -1,7 +1,7 @@
 // Room data (single source of truth)
 const roomsData = [
   {
-    type: "Guest House",
+    type: "Guest House(day to day",
     price: 700,
     location: "Butterworth B&B",
     size: "40 m²",
@@ -11,7 +11,7 @@ const roomsData = [
     detailsLink: "room_standard.html"
   },
   {
-    type: "Sharing Room",
+    type: "Furnished(month to month)",
     price: 700,
     location: "Butterworth B&B",
     size: "45 m²",
@@ -21,13 +21,13 @@ const roomsData = [
     detailsLink: "room_shared.html"
   },
   {
-    type: "Family Room",
+    type: "Unfurnished(long term)",
     price: 700,
     location: "Butterworth B&B",
     size: "60 m²",
     capacity: "max. 5 pers.",
     amenities: ["Free Wi-Fi", "TV", "Bathroom with Shower"],
-    images: ["PropertyX images\Furnished\Furnished PropertyX3.jpg", "PropertyX images/Furnished/Furnished PropertyX3.jpg", "PropertyX images\Unfurnished\IMG-20250814-WA0030.jpg"],
+    images: ["PropertyX images/Furnished/Furnished PropertyX3.jpg", "PropertyX images/Furnished/Furnished PropertyX3.jpg", "PropertyX images\Unfurnished\IMG-20250814-WA0030.jpg"],
     detailsLink: "room_family.html"
   }
 ];
