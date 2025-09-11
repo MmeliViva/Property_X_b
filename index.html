@@ -257,7 +257,7 @@
                   <div class="col-lg-12">
                     <p>At Property X, we make finding your next home or stay simple, flexible, and stress-free. Whether you’re looking for a fully furnished apartment for a short-term visit or an unfurnished space for a long-term lease, we’ve got you covered.</p>
                       
-                      <p>With Property X, you get the flexibility of a guest house and the stability of a home — all in one trusted place. <br><br><b> Your safety and comfort is our priority!</b>  </p>
+                      <p>Flexibility of a guest house and the stability of a home. <br><br><b style="color: #4E6FAE;"> Your safety and comfort is our priority!</b>  </p>
                     
                   </div>
                  
@@ -643,8 +643,11 @@
       
 <style>
   :root{
-    --px-accent:#fd7e14;
-    --px-accent-200:#ff9440;
+    /* Business-friendly palette */
+    --px-accent:#2FA39C;      /* refined teal */
+    --px-accent-200:#4FC0B8;  /* lighter teal for hover */
+    --px-secondary:#4E6FAE;   /* professional blue (optional) */
+    --px-navy:#1F2A5A;        /* headings/nav if needed */
     --px-black:#0b0b0c;
     --px-white:#ffffff;
   }
@@ -663,7 +666,6 @@
     background:
       linear-gradient(120deg, rgba(0,0,0,.55), rgba(0,0,0,.35)),
       url("assets/img/hero/propertyx-hero@2x.jpg") center/cover no-repeat;
-    /* TODO: replace with your best hero image */
     will-change:transform;
   }
 
@@ -685,8 +687,7 @@
   .hero-home .brand-tag{
     font-weight:700; letter-spacing:.3px;
     padding:.35rem .75rem; border-radius:999px;
-    color:#111; background:var(--px-accent);
-    box-shadow:0 8px 24px rgba(253,126,20,.35);
+    color:#111; background:var(--px-accent);/* teal glow */
   }
 
   .hero-home .hero-title{
@@ -704,16 +705,15 @@
     display:inline-flex; align-items:center; gap:.5rem;
     background:var(--px-accent); color:#111; border:0;
     padding:.8rem 1.1rem; border-radius:12px; font-weight:700;
-    box-shadow:0 10px 24px rgba(253,126,20,.35);
     transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
     text-decoration:none;
   }
   .btn-accent:hover{ 
     background:var(--px-accent-200); 
     transform:translateY(-1px);
-    box-shadow:0 16px 34px rgba(253,126,20,.45);
-    color: #0b0b0c;
-   }
+    box-shadow:0 16px 34px rgba(47,163,156,.45);
+    color: var(--px-black);
+  }
 
   .btn-ghost{
     display:inline-flex; align-items:center; gap:.5rem;
@@ -755,18 +755,16 @@
     width:72px; height:72px; border-radius:50%;
     background: var(--px-accent);
     display:flex; align-items:center; justify-content:center;
-    box-shadow:0 12px 28px rgba(253,126,20,.45);
+    box-shadow:0 12px 28px rgba(47,163,156,.45);
     transition: transform .2s ease, box-shadow .2s ease;
   }
   .hero-home .play-fab::before{
-    /* animated ring */
     content:""; position:absolute; inset:0; border-radius:50%;
-    border:2px solid rgba(253,126,20,.45);
+    border:2px solid rgba(47,163,156,.45);
     animation: ring 1.6s ease-out infinite;
   }
-  .hero-home .play-fab:hover{ transform: scale(1.05); box-shadow:0 18px 36px rgba(253,126,20,.55); }
+  .hero-home .play-fab:hover{ transform: scale(1.05); box-shadow:0 18px 36px rgba(47,163,156,.55); }
   .hero-home .play-fab::after{
-    /* white triangle */
     content:""; position:relative; left:2px;
     border-style:solid; border-width:12px 0 12px 20px;
     border-color: transparent transparent transparent #fff;
@@ -797,6 +795,8 @@
     .hero-home .hero-card{ padding:18px 16px; }
   }
 </style>
+
+
 
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
