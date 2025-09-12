@@ -22,7 +22,7 @@ const roomsData = [
   },
   {
     type: "Unfurnished(long term)",
-    price: 700,
+    price: "Availible on request",
     location: "Butterworth B&B",
     size: "60 m²",
     capacity: "max. 5 pers.",
@@ -146,7 +146,7 @@ const bookingConfirmationModalHTML = `
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form id="bookingForm" action="https://formsubmit.co/info@propertyx.co.za" method="POST">
+          <form id="bookingForm" action="https://formsubmit.co/mmeliviva@gmail.com" method="POST">
             <input type="hidden" id="confirmRoomType" name="roomType">
             <input type="hidden" id="confirmRoomPrice" name="roomPrice">
             <input type="hidden" id="confirmCheckin" name="checkin">
@@ -154,7 +154,7 @@ const bookingConfirmationModalHTML = `
             <input type="hidden" id="confirmAdults" name="adults">
             <input type="hidden" id="confirmChildren" name="children">
             <input type="hidden" id="confirmTotalCost" name="totalCost">
-            <input type="hidden" name="_next" value="https://www.bibbysbnb.co.za/booking_info.html">
+            <input type="hidden" name="_next" value="https://127.0.0.1:5502/booking_info.html">
             <input type="hidden" name="_captcha" value="true">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_subject" value="Bibby's BnB: Reservation Confirmation!">
