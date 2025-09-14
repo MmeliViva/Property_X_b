@@ -4,7 +4,7 @@ const roomsData = [
     type: "Guest House(day to day",
     price: 700,
     location: "Butterworth B&B",
-    size: "40 m²",
+    size: "60 m²",
     capacity: "max. 2 pers.",
     amenities: ["Free Wi-Fi", "TV", "Bathroom with Shower"],
     images: ["PropertyX images/Furnished/Furnished PropertyX6.jpg","PropertyX images/Furnished/furnished_ProertyX2.jpg", "PropertyX images/Furnished/Furnished PropertyX7.jpg"],
@@ -12,21 +12,21 @@ const roomsData = [
   },
   {
     type: "Furnished(month to month)",
-    price: 700,
+    price: "On request",
     location: "Butterworth B&B",
-    size: "45 m²",
-    capacity: "max. 4 pers.",
-    amenities: ["Free Wi-Fi", "TV", "Bathroom with Shower"],
+    size: "60 m²",
+    capacity: "max. 2 pers.",
+    amenities: ["Free Wi-Fi", "55 inch smart_TV", "Bathroom with Shower", "washing machine", "Dryer", "mini_bar fridge", "Microwave"],
     images: ["PropertyX images/Furnished/Furnished PropertyX6.jpg", "PropertyX images/Furnished/Furnished PropertyX6.jpg", "PropertyX images\Unfurnished\IMG-20250814-WA0030.jpg"],
     detailsLink: "room_shared.html"
   },
   {
-    type: "Unfurnished(long term)",
+    type: "Semi_furnished(long term)",
     price: "Availible on request",
     location: "Butterworth B&B",
     size: "60 m²",
-    capacity: "max. 5 pers.",
-    amenities: ["Free Wi-Fi", "TV", "Bathroom with Shower"],
+    capacity: "max. 2 pers.",
+    amenities: ["Free Wi-Fi", "Bathroom with Shower"],
     images: ["PropertyX images/Furnished/Furnished PropertyX3.jpg", "PropertyX images/Furnished/Furnished PropertyX3.jpg", "PropertyX images\Unfurnished\IMG-20250814-WA0030.jpg"],
     detailsLink: "room_family.html"
   }
