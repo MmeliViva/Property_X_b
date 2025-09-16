@@ -74,7 +74,7 @@ const roomSelectionModalHTML = `
                             </div>
                           </div>
                           <div class="room-item-card__buttons d-flex gap-2">
-                            <a href="room_shared.html" class="btn btn-outline-dark btn-arrow">
+                            <a href="furnished_apartment.html" class="btn btn-outline-dark btn-arrow">
                               <span class="text">Details</span>
                               <span class="bi bi-arrow-right ms-2"></span>
                             </a>

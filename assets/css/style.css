@@ -384,6 +384,57 @@ h6 {
   padding: 0;
 }
 
+#hero-properties {
+  width: 100%;
+  height: 100vh;
+  background: url("../../PropertyX images/Furnished/Furnished\ propertyX1.jpg") top center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+#hero-properties:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero-properties.container {
+  padding-top: 110px;
+}
+
+
+
+@media (min-width: 1300px) {
+  #hero-properties .container-fluid {
+    margin-left: 98px;
+    margin-right: 98px;
+  }
+}
+
+#hero-properties h1 {
+  margin: 0;
+  font-size: 58px;
+  font-weight: 300;
+  line-height: 56px;
+  color: #fff;
+  font-family: "Poppins";
+}
+
+@media (max-width: 768px) {
+  #hero-properties h1 {
+      font-size: 44px;
+      line-height: 36px;
+  }
+}
+
+
+
+
 
 #hero-shared_room {
   width: 100%;
