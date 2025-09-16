@@ -1,34 +1,34 @@
 // Room data (single source of truth)
 const roomsData = [
   {
-    type: "Guest House(day to day",
-    price: 750,
+    type: "Guest House (per Night)",
+    price: "R750",
     location: "Butterworth B&B",
     size: "60 m²",
     capacity: "max. 2 pers.",
     amenities: ["Mini bar fridge ", "electric stove with glass-top ", "micro-wave", "Washing machine & dryer", "Free Wi-Fi", "65  inch smartTV", "Bathroom with Shower"],
-    images: ["PropertyX images/Furnished/Furnished PropertyX6.jpg","PropertyX images/Furnished/furnished_ProertyX2.jpg", "PropertyX images/Furnished/Furnished PropertyX7.jpg"],
-    detailsLink: "room_standard.html"
+    images: ["PropertyX images/Furnished/Furnished PropertyX3.jpg","PropertyX images/Furnished/Furnished PropertyX6.jpg","PropertyX images/Furnished/furnished_ProertyX2.jpg", "PropertyX images/Furnished/Furnished PropertyX7.jpg"],
+    detailsLink: "guest_house.html"
   },
   {
-    type: "Furnished(month to month)",
-    price: "On request",
+    type: "Furnished (month to month)",
+    price: "Price Available On Request",
     location: "Butterworth B&B",
     size: "60 m²",
     capacity: "max. 2 pers.",
     amenities: ["Free Wi-Fi", "55 inch smart_TV", "Bathroom with Shower", "washing machine & Dryer", "mini_bar fridge", "Microwave"],
-    images: ["PropertyX images/Furnished/Furnished PropertyX6.jpg", "PropertyX images/Furnished/Furnished PropertyX6.jpg", "PropertyX images\Unfurnished\IMG-20250814-WA0030.jpg"],
-    detailsLink: "room_shared.html"
+    images: ["PropertyX images/Furnished/Furnished PropertyX6.jpg", "PropertyX images/Furnished/Furnished PropertyX6.jpg", "PropertyX images/Unfurnished/IMG-20250814-WA0030.jpg"],
+    detailsLink: "furnished_apartment.html"
   },
   {
-    type: "Semi_furnished(long term)",
-    price: "Availible on request",
+    type: "Semi furnished (long term rental)",
+    price: "Price Available On Request",
     location: "Butterworth B&B",
     size: "60 m²",
     capacity: "max. 2 pers.",
     amenities: ["Free Wi-Fi", "Bathroom with Shower"],
-    images: ["PropertyX images/Furnished/Furnished PropertyX3.jpg", "PropertyX images/Furnished/Furnished PropertyX3.jpg", "PropertyX images\Unfurnished\IMG-20250814-WA0030.jpg"],
-    detailsLink: "room_family.html"
+    images: ["PropertyX images/Unfurnished/unfurnishedB1.jpg", "PropertyX images/Unfurnished/unfurnishedB2.jpg", "PropertyX images/Unfurnished/unfurnishedBt.jpg", "PropertyX images/Unfurnished/unfurnishedShower.jpg", "PropertyX images/Unfurnished/IMG-20250814-WA0030.jpg"],
+    detailsLink: "semi_furnished.html"
   }
 ];
 
@@ -63,9 +63,8 @@ function generateRoomCard(room, index) {
             <div class="room-item-card__text-box-inner">
               <div class="room-item-card__price-hld">
                 <div class="room-item-card__price">
-                  <span class="from">from</span>
-                  <span class="value text-primary">R${room.price}</span>
-                  <span class="rate">/night</span>
+                  <span class="value text-primary">${room.price}</span>
+                  
                 </div>
               </div>
               <div class="room-item-card__room-location-hld text-muted">
