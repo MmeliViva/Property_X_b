@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         showMonths: 2,          // Displays current and next month
         dateFormat: "Y-m-d",    // Standard format for form submission
         onChange: function(selectedDates, dateStr, instance) {
-            if (selectedDates.length === 2) {
+            if (selectedDates.length === 1) {
                 const [start, end] = selectedDates;
                 // Update check-in input with start date
                 document.getElementById("checkin").value = instance.formatDate(start, "F j, Y");

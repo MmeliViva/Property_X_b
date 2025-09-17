@@ -2,7 +2,7 @@
 const roomsData = [
   {
     type: "Guest House (per Night)",
-    price: "R750",
+    price: 750,
     location: "Butterworth B&B",
     size: "30 m²",
     capacity: "max. 2 pers.",
@@ -63,7 +63,7 @@ function generateRoomCard(room, index) {
             <div class="room-item-card__text-box-inner">
               <div class="room-item-card__price-hld">
                 <div class="room-item-card__price">
-                  <span class="value text-primary">${room.price}</span>
+                  <span class="value text-primary">R - ${room.price}</span>
                   
                 </div>
               </div>
@@ -145,7 +145,7 @@ const bookingConfirmationModalHTML = `
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form id="bookingForm" action="https://formsubmit.co/mmeliviva@gmail.com" method="POST">
+          <form id="bookingForm" action="https://formsubmit.co/propertxo1@gmail.com" method="POST">
             <input type="hidden" id="confirmRoomType" name="roomType">
             <input type="hidden" id="confirmRoomPrice" name="roomPrice">
             <input type="hidden" id="confirmCheckin" name="checkin">
