@@ -28,7 +28,7 @@ const roomsData = [
     capacity: "max. 2 pers.",
     amenities: ["Free Wi-Fi", "Bathroom with Shower"],
     images: ["PropertyX images/Unfurnished/unfurnishedB1.jpg", "PropertyX images/Unfurnished/unfurnishedB2.jpg", "PropertyX images/Unfurnished/unfurnishedBt.jpg", "PropertyX images/Unfurnished/unfurnishedShower.jpg", "PropertyX images/Unfurnished/IMG-20250814-WA0030.jpg"],
-    detailsLink: "semi_furnished.html"
+    detailsLink: "semi-furnished.html"
   }
 ];
 
