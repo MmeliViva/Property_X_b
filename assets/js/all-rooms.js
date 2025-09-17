@@ -2,9 +2,9 @@
 const roomsData = [
   {
     type: "Guest House (per Night)",
-    price: "R750",
+    price: 750,
     location: "Butterworth B&B",
-    size: "60 m²",
+    size: "30 m²",
     capacity: "max. 2 pers.",
     amenities: ["Mini bar fridge ", "electric stove with glass-top ", "micro-wave", "Washing machine & dryer", "Free Wi-Fi", "65  inch smartTV", "Bathroom with Shower"],
     images: ["PropertyX images/Furnished/Furnished PropertyX3.jpg","PropertyX images/Furnished/Furnished PropertyX6.jpg","PropertyX images/Furnished/furnished_ProertyX2.jpg", "PropertyX images/Furnished/Furnished PropertyX7.jpg"],
@@ -14,7 +14,7 @@ const roomsData = [
     type: "Furnished (month to month)",
     price: "Price Available On Request",
     location: "Butterworth B&B",
-    size: "60 m²",
+    size: "30 m²",
     capacity: "max. 2 pers.",
     amenities: ["Free Wi-Fi", "55 inch smart_TV", "Bathroom with Shower", "washing machine & Dryer", "mini_bar fridge", "Microwave"],
     images: ["PropertyX images/Furnished/Furnished PropertyX6.jpg", "PropertyX images/Furnished/Furnished PropertyX6.jpg", "PropertyX images/Unfurnished/IMG-20250814-WA0030.jpg"],
@@ -24,7 +24,7 @@ const roomsData = [
     type: "Semi furnished (long term rental)",
     price: "Price Available On Request",
     location: "Butterworth B&B",
-    size: "60 m²",
+    size: "30 m²",
     capacity: "max. 2 pers.",
     amenities: ["Free Wi-Fi", "Bathroom with Shower"],
     images: ["PropertyX images/Unfurnished/unfurnishedB1.jpg", "PropertyX images/Unfurnished/unfurnishedB2.jpg", "PropertyX images/Unfurnished/unfurnishedBt.jpg", "PropertyX images/Unfurnished/unfurnishedShower.jpg", "PropertyX images/Unfurnished/IMG-20250814-WA0030.jpg"],
@@ -63,7 +63,7 @@ function generateRoomCard(room, index) {
             <div class="room-item-card__text-box-inner">
               <div class="room-item-card__price-hld">
                 <div class="room-item-card__price">
-                  <span class="value text-primary">${room.price}</span>
+                  <span class="value text-primary">R - ${room.price}</span>
                   
                 </div>
               </div>
@@ -145,7 +145,7 @@ const bookingConfirmationModalHTML = `
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form id="bookingForm" action="https://formsubmit.co/mmeliviva@gmail.com" method="POST">
+          <form id="bookingForm" action="https://formsubmit.co/mjekulamizamo@gmail.com" method="POST">
             <input type="hidden" id="confirmRoomType" name="roomType">
             <input type="hidden" id="confirmRoomPrice" name="roomPrice">
             <input type="hidden" id="confirmCheckin" name="checkin">
