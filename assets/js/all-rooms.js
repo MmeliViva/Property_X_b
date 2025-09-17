@@ -145,7 +145,7 @@ const bookingConfirmationModalHTML = `
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form id="bookingForm" action="https://formsubmit.co/mjekulamizamo@gmail.com" method="POST">
+          <form id="bookingForm" action="https://formsubmit.co/propertxo1@gmail.com" method="POST">
             <input type="hidden" id="confirmRoomType" name="roomType">
             <input type="hidden" id="confirmRoomPrice" name="roomPrice">
             <input type="hidden" id="confirmCheckin" name="checkin">
@@ -153,7 +153,7 @@ const bookingConfirmationModalHTML = `
             <input type="hidden" id="confirmAdults" name="adults">
             <input type="hidden" id="confirmChildren" name="children">
             <input type="hidden" id="confirmTotalCost" name="totalCost">
-            <input type="hidden" name="_next" value="https://property-x-b.vercel.app/booking_info.html">
+            <input type="hidden" name="_next" value="https://propertyyx.co.za/booking_info.html">
             <input type="hidden" name="_captcha" value="true">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_subject" value="PropertyX: Reservation Confirmation!">
