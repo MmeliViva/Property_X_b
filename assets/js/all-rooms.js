@@ -145,7 +145,7 @@ const bookingConfirmationModalHTML = `
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form id="bookingForm" action="https://formsubmit.co/mjekulamizamo@gmail.com" method="POST">
+          <form id="bookingForm" action="https://formsubmit.co/propertx01@gmail.com" method="POST">
             <input type="hidden" id="confirmRoomType" name="roomType">
             <input type="hidden" id="confirmRoomPrice" name="roomPrice">
             <input type="hidden" id="confirmCheckin" name="checkin">
@@ -153,11 +153,12 @@ const bookingConfirmationModalHTML = `
             <input type="hidden" id="confirmAdults" name="adults">
             <input type="hidden" id="confirmChildren" name="children">
             <input type="hidden" id="confirmTotalCost" name="totalCost">
-            <input type="hidden" name="_next" value="https://property-x-b.vercel.app/booking_info.html">
+            <input type="hidden" name="_next" value="https://propertyyx.co.za/booking_info.html">
             <input type="hidden" name="_captcha" value="true">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_subject" value="PropertyX: Reservation Confirmation!">
             <!-- Add auto-response for the client -->
+            <input type="hidden" name="_autoresponse" value="Thank you for booking with PropertyX! Your reservation has been received. To complete your reservation, please make payment within 24 hours to:\n FNB\nAccount Number: 63150101805\n. Please use your booking ID as the payment reference and send your proof of payment to info@propertyx.co.za. Alternatively, call us at 072 503 6405 to arrange payment on arrival.\n\nPlease see your booking details below.">
             <input type="hidden" name="_autoresponse" value="Thank you for booking with PropertyX! Your reservation has been received. To complete your reservation, please make payment within 24 hours to:\n FNB\nAccount Number: 63150101805\n. Please use your booking ID as the payment reference and send your proof of payment to info@propertyx.co.za. Alternatively, call us at 047 491 0299 to arrange payment on arrival.\n\nPlease see your booking details below.">
             <p><strong>Room Type:</strong> <span id="displayRoomType"></span></p>
             <p><strong>Check-in:</strong> <span id="displayCheckin"></span></p>
