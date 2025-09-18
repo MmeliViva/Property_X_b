@@ -158,7 +158,7 @@ const bookingConfirmationModalHTML = `
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_subject" value="PropertyX: Reservation Confirmation!">
             <!-- Add auto-response for the client -->
-            <input type="hidden" name="_autoresponse" value="Thank you for booking with PropertyX! Your reservation has been received. To complete your reservation, please make payment within 24 hours to:\n Nedbank\nAccount Number: 1263112900\n. Please use your booking ID as the payment reference and send your proof of payment to info@propertyx.co.za. Alternatively, call us at 047 491 0299 to arrange payment on arrival.\n\nPlease see your booking details below.">
+            <input type="hidden" name="_autoresponse" value="Thank you for booking with PropertyX! Your reservation has been received. To complete your reservation, please make payment within 24 hours to:\n FNB\nAccount Number: 63150101805\n. Please use your booking ID as the payment reference and send your proof of payment to info@propertyx.co.za. Alternatively, call us at 047 491 0299 to arrange payment on arrival.\n\nPlease see your booking details below.">
             <p><strong>Room Type:</strong> <span id="displayRoomType"></span></p>
             <p><strong>Check-in:</strong> <span id="displayCheckin"></span></p>
             <p><strong>Check-out:</strong> <span id="displayCheckout"></span></p>
